@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  
+  --base-color: 240;
+  --text-color: hsl(var(--base-color), 6%, 21%);
+
+  --bg-color: #ffffff;
+  --bg-card-primary: hsla(var(--base-color), 9%, 89%, 1);
+  --bg-card-second: hsla(var(--base-color), 97%, 31%, 1);
+
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  width: 82.1rem;
+  height: 100vh;
+
+  display: flex;
+  margin: 0 auto;;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19.2rem;
+ 
+}
+
+.wrapper{
+  width: 30.8rem;
+  height: 33.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+
+#timer{
+  font-size: 12.6rem;
+
+  display: flex;
+
+  margin-bottom: .6rem;
+}
+
+#controls{
+  display: flex;
+  gap: 4rem;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
+.cards-sound{
+  width: 30.8rem;
+  height: 33.6rem;
+
+  display: grid;
+  grid-template-columns: 138px 138px;
+  gap: 32px;
+
+}
+
+
+
+/*  conf para button selecionado
+.cards svg path{
+  fill: var(--bg-card-second)
+} */
