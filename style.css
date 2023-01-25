@@ -36,6 +36,11 @@ main{
  
 }
 
+.reveal svg{
+  background-color: var(--bg-card-second);
+  color: white;
+}
+
 .wrapper{
   width: 30.8rem;
   height: 33.6rem;
