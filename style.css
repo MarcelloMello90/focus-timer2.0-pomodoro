@@ -87,7 +87,7 @@ button{
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   
   main{
     display: flex;
@@ -95,7 +95,13 @@ button{
     
     margin: 20rem auto;
     gap: 5rem;
+  }
 
+  .cards-sound{
+    max-width: 30.8rem;
+    max-height: 33.6rem;
+
+  
   }
 }
 
