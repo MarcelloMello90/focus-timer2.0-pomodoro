@@ -1,6 +1,6 @@
 export default function() {
     // const buttonPressAudio = new Audio("./sounds/audios_buttonPress")
-  const kitchenTimer = new Audio("./sounds/audios_kichenTimer")
+  const kitchenTimer = new Audio("./sounds/audios_kichenTimer.wav")
   const audioForest = new Audio("./sounds/forest")
   const audioRain = new Audio("./sounds/rain")
   const audioCoffee = new Audio("./sounds/coffee")
