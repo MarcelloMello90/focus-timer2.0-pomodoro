@@ -5,10 +5,13 @@ import {
   btnPause,
   btnPlay,
   btnRain,
-  btnStop
+  btnStop,
+  btnUpTimer,
+  btnDownTimer
 } from "./elements.js"
 
 import Sounds from "./sounds.js"
+import Timer from "./timer.js"
 const sounds = Sounds()
 
 export default function({controls, timer, sound}) {
@@ -47,5 +50,11 @@ export default function({controls, timer, sound}) {
     sounds.cardRain()
   })
   
+  btnUpTimer.addEventListener('click', function() {
+    timer.UpMinutes()
+  })
 
+  btnDownTimer.addEventListener('click', function() {
+    timer.DownMinutes()
+  })
 }

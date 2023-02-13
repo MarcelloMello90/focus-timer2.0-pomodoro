@@ -1,11 +1,26 @@
 import Sounds from "./sounds.js"
+import {
+  btnPlay,
+  btnPause,
+  btnStop,
+  btnForest,
+  btnRain,
+  btnCoffee,
+  btnFirePlace,
+  minutesDisplay,
+  secondsDisplay,
+  btnUpTimer,
+  btnDownTimer
+} from "./elements.js"
+import Controls from "./controls.js"
 
-export default function Timer({ 
+export default function({ 
   minutesDisplay, 
   secondsDisplay, 
   resetControls,
-  sound
-}) {
+ 
+  
+  }) {
 
   let timerTimeOut
   let minutes = Number(minutesDisplay.textContent)
@@ -58,11 +73,38 @@ export default function Timer({
     clearTimeout(timerTimeOut)
   }
 
+  function UpMinutes (){
+    let up5Minutes = minutes
+    if (minutes > 0){
+      minutes= minutes + 5
+    } 
+       
+    updateDisplay(minutes, 0)
+  }
+
+  function DownMinutes (){
+    let down5Minutes = minutes
+    if (minutes > 0){
+      minutes= minutes - 5
+    } 
+
+    if(minutes <= 0){
+      minutes= 0
+      
+    }
+    
+    updateDisplay(minutes, 0)
+
+  }
+  
+
   return {
     countdown,
     reset,
     updateDisplay,
     updateMinutes,
-    hold
+    hold,
+    UpMinutes,
+    DownMinutes
   }
 }
