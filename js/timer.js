@@ -74,8 +74,7 @@ export default function({
   }
 
   function UpMinutes (){
-    let up5Minutes = minutes
-    if (minutes > 0){
+    if (minutes >= 0){
       minutes= minutes + 5
     } 
        
@@ -83,7 +82,6 @@ export default function({
   }
 
   function DownMinutes (){
-    let down5Minutes = minutes
     if (minutes > 0){
       minutes= minutes - 5
     } 
@@ -92,7 +90,7 @@ export default function({
       minutes= 0
       
     }
-    
+
     updateDisplay(minutes, 0)
 
   }

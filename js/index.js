@@ -11,9 +11,7 @@ import {
   btnCoffee,
   btnFirePlace,
   minutesDisplay,
-  secondsDisplay,
-  btnUpTimer,
-  btnDownTimer
+  secondsDisplay
 } from "./elements.js"
 
 const controls = Controls({
@@ -23,7 +21,7 @@ const controls = Controls({
   btnForest,
   btnRain,
   btnCoffee,
-  btnFirePlace
+  btnFirePlace,
 })
 
 const timer = Timer({

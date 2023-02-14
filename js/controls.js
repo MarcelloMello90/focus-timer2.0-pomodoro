@@ -1,6 +1,7 @@
 export default function Controls({
   btnPause,
-  btnPlay
+  btnPlay,
+  btnForest
 }) {
 
   function play() {
@@ -18,9 +19,17 @@ export default function Controls({
     btnPause.classList.add('hide')
   }
 
+  function actBtn(btnSelected, btn1, btn2, btn3) {
+    btnSelected.classList.add("btnActive")
+    btn1.classList.remove("btnActive")
+    btn2.classList.remove("btnActive")
+    btn3.classList.remove("btnActive")
+  }
+
   return {
     reset,
     play,
     pause,
+    actBtn
   }
 }

@@ -11,7 +11,7 @@ import {
 } from "./elements.js"
 
 import Sounds from "./sounds.js"
-import Timer from "./timer.js"
+// import Timer from "./timer.js"
 const sounds = Sounds()
 
 export default function({controls, timer, sound}) {
@@ -26,6 +26,7 @@ export default function({controls, timer, sound}) {
     controls.pause()
     timer.hold()
     sound.pressButton()
+    
   })
 
   btnStop.addEventListener('click', function() {
@@ -36,18 +37,26 @@ export default function({controls, timer, sound}) {
 
   btnForest.addEventListener('click', function() {
     sounds.cardForest()
+    controls.actBtn(btnForest, btnCoffee, btnFirePlace, btnRain)
+
   })
 
   btnFirePlace.addEventListener('click', function() {
     sounds.cardFirePlace()
+    controls.actBtn(btnFirePlace, btnForest, btnCoffee, btnRain)
+
   })
 
   btnCoffee.addEventListener('click', function() {
     sounds.cardCoffee()
+    controls.actBtn(btnCoffee, btnForest, btnFirePlace, btnRain)
+
   })
 
   btnRain.addEventListener('click', function() {
     sounds.cardRain()
+    controls.actBtn(btnRain, btnForest, btnCoffee, btnFirePlace)
+
   })
   
   btnUpTimer.addEventListener('click', function() {

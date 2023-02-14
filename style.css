@@ -73,9 +73,24 @@ button{
   cursor: pointer;
 }
 
+/* button svg path:hover{
+  fill: #c9c9e2;
+} */
+
 .hide{
   display: none;
 }
+
+
+
+.btnActive svg path:first-child{
+  fill: #02799D;
+}
+
+.btnActive svg path:last-child{
+  fill: white;
+}
+
 
 .cards-sound{
   max-width: 30.8rem;
@@ -86,6 +101,15 @@ button{
   gap: 32px;
 
 }
+
+/* button.card-forest svg path{
+  fill: red;
+}
+
+button.card-forest svg path{
+  fill: blue;
+}
+ */
 
 @media (max-width: 800px) {
   
