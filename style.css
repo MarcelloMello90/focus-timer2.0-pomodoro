@@ -40,11 +40,6 @@ main{
  
 }
 
-/* .reveal svg{
-  background-color: var(--bg-card-second);
-  color: white;
-} */
-
 .wrapper{
   max-width: 30.8rem;
   max-height: 33.6rem;
@@ -73,9 +68,6 @@ button{
   cursor: pointer;
 }
 
-/* button svg path:hover{
-  fill: #c9c9e2;
-} */
 
 .hide{
   display: none;
@@ -102,15 +94,6 @@ button{
 
 }
 
-/* button.card-forest svg path{
-  fill: red;
-}
-
-button.card-forest svg path{
-  fill: blue;
-}
- */
-
 @media (max-width: 800px) {
   
   main{
@@ -128,12 +111,3 @@ button.card-forest svg path{
   
   }
 }
-
-
-
-
-
-/*  conf para button selecionado
-.cards svg path{
-  fill: var(--bg-card-second)
-} */
