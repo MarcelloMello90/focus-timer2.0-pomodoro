@@ -1,7 +1,7 @@
 export default function Controls({
   btnPause,
   btnPlay,
-  btnForest
+  // btnForest
 }) {
 
   function play() {
